@@ -1,3 +1,57 @@
+
+.profile a {
+  color: #ff5f6d;
+  font-weight: 700;
+  font-size: 1.08rem;
+  text-decoration: none;
+  background: rgb(253, 252, 252);
+  padding: 6px 325px;
+  border-radius: 18px;
+  box-shadow: 0 2px 8px #0002;
+  transition: background 0.2s, color 0.2s;
+}
+.profile h3 {
+  color: #ff5f6d;
+  font-size: 1.2rem;
+  margin: 0 0 8px 0;
+  padding: 0px 325px;
+  font-weight: 600;
+  letter-spacing: 0.7px;
+  animation: profileH3FadeInMove 1.2s cubic-bezier(0.4,0,0.2,1) both, profileH3InfiniteMove 6s linear infinite;
+  text-shadow: 0 0 8px #ff5f6d55, 0 2px 8px #0002;
+}
+
+@keyframes profileH3FadeInMove {
+  0% {
+    opacity: 0;
+    transform: translateY(-24px) scale(0.92) rotate(-4deg);
+    letter-spacing: 2px;
+    filter: blur(2px);
+  }
+  40% {
+    opacity: 1;
+    transform: translateY(8px) scale(1.04) rotate(2deg);
+    letter-spacing: 1.2px;
+    filter: blur(0.5px);
+  }
+  70% {
+    transform: translateY(-4px) scale(1.01) rotate(-1deg);
+    letter-spacing: 0.9px;
+    filter: blur(0.2px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1) rotate(0deg);
+    letter-spacing: 0.7px;
+    filter: blur(0);
+  }
+}
+
+
+.profile a:hover {
+  background: #ff5f6d;
+  color: #fff;
+}
 body {
     font-family: 'Quicksand', Arial, sans-serif;
     background-color: #2a2d3e;

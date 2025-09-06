@@ -1,34 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unix/Linux Command Reference</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <div class="container">
         <h1>Unix/Linux Command Reference</h1>
+        <div class="profile">
+    <h3>My Portfolio👇</h3>
+   
+   <a href="https://dineshc227.github.io/Dinesh/" target="_blank">Dinesh Chowdary</a>
+  </div>
         <div class="command-section">
             <h2 onclick="toggleSection('file-commands')">File Commands</h2>
             <div id="file-commands" class="command-list">
                 <ul>
-                    <li><strong>ls -a</strong>: Directory listing with hidden files<br><div class="example">Example: <code>ls -a /home/user</code> (lists all files, including .bashrc)</div></li>
-                    <li><strong>cd dir</strong>: Change directory to dir<br><div class="example">Example: <code>cd /var/www</code> (moves to /var/www directory)</div></li>
-                    <li><strong>cd</strong>: Change to home<br><div class="example">Example: <code>cd</code> (moves to user's home directory, e.g., /home/user)</div></li>
-                    <li><strong>pwd</strong>: Show current directory<br><div class="example">Example: <code>pwd</code> (outputs /home/user if you're in that directory)</div></li>
-                    <li><strong>mkdir dir</strong>: Create a directory dir<br><div class="example">Example: <code>mkdir projects</code> (creates a directory named projects)</div></li>
-                    <li><strong>rm -r dir</strong>: Delete directory dir<br><div class="example">Example: <code>rm -r old_project</code> (removes old_project directory and its contents)</div></li>
-                    <li><strong>rm -rf dir</strong>: Force remove directory dir<br><div class="example">Example: <code>rm -rf temp</code> (forcefully deletes temp directory without prompting)</div></li>
-                    <li><strong>cp file1 file2</strong>: Copy file1 to file2<br><div class="example">Example: <code>cp document.txt document_backup.txt</code> (copies document.txt to document_backup.txt)</div></li>
-                    <li><strong>mv file1 file2</strong>: Rename or move file1 to file2<br><div class="example">Example: <code>mv oldname.txt newname.txt</code> (renames oldname.txt to newname.txt)</div></li>
-                    <li><strong>touch file</strong>: Create or update file<br><div class="example">Example: <code>touch notes.txt</code> (creates or updates timestamp of notes.txt)</div></li>
-                    <li><strong>cat > file</strong>: Places standard input into file<br><div class="example">Example: <code>cat > memo.txt</code> (type text, press Ctrl+D to save to memo.txt)</div></li>
-                    <li><strong>more file</strong>: Output the contents of file<br><div class="example">Example: <code>more log.txt</code> (displays log.txt one screen at a time)</div></li>
-                    <li><strong>head file</strong>: Output the first 10 lines of file<br><div class="example">Example: <code>head access.log</code> (shows first 10 lines of access.log)</div></li>
-                    <li><strong>tail -f file</strong>: Output the last 10 lines of file, starting with the last 10 lines as it grows<br><div class="example">Example: <code>tail -f server.log</code> (shows last 10 lines of server.log and updates live)</div></li>
-                    <li><strong>ln -s file link</strong>: Create symbolic link to file<br><div class="example">Example: <code>ln -s /var/www/html web</code> (creates a symlink named web to /var/www/html)</div></li>
-                    <li><strong>find / -name file</strong>: Search for file from root<br><div class="example">Example: <code>find / -name config.yml</code> (searches for config.yml across the filesystem)</div></li>
+                    <li><strong>ls -a</strong>: Directory listing with hidden files<br>
+                        <div class="example">Example: <code>ls -a /home/user</code> (lists all files, including .bashrc)
+                        </div>
+                    </li>
+                    <li><strong>cd dir</strong>: Change directory to dir<br>
+                        <div class="example">Example: <code>cd /var/www</code> (moves to /var/www directory)</div>
+                    </li>
+                    <li><strong>cd</strong>: Change to home<br>
+                        <div class="example">Example: <code>cd</code> (moves to user's home directory, e.g., /home/user)
+                        </div>
+                    </li>
+                    <li><strong>pwd</strong>: Show current directory<br>
+                        <div class="example">Example: <code>pwd</code> (outputs /home/user if you're in that directory)
+                        </div>
+                    </li>
+                    <li><strong>mkdir dir</strong>: Create a directory dir<br>
+                        <div class="example">Example: <code>mkdir projects</code> (creates a directory named projects)
+                        </div>
+                    </li>
+                    <li><strong>rm -r dir</strong>: Delete directory dir<br>
+                        <div class="example">Example: <code>rm -r old_project</code> (removes old_project directory and
+                            its contents)</div>
+                    </li>
+                    <li><strong>rm -rf dir</strong>: Force remove directory dir<br>
+                        <div class="example">Example: <code>rm -rf temp</code> (forcefully deletes temp directory
+                            without prompting)</div>
+                    </li>
+                    <li><strong>cp file1 file2</strong>: Copy file1 to file2<br>
+                        <div class="example">Example: <code>cp dinesh.txt dinesh_backup.txt</code> (copies dinesh.txt to
+                            dinesh_backup.txt)</div>
+                    </li>
+                    <li><strong>mv file1 file2</strong>: Rename or move file1 to file2<br>
+                        <div class="example">Example: <code>mv old_dinesh.txt new_dinesh.txt</code> (renames
+                            old_dinesh.txt to new_dinesh.txt)</div>
+                    </li>
+                    <li><strong>touch file</strong>: Create or update file<br>
+                        <div class="example">Example: <code>touch dinesh.txt</code> (creates or updates timestamp of
+                            notes.txt)</div>
+                    </li>
+                    <li><strong>cat > file</strong>: Places standard input into file<br>
+                        <div class="example">Example: <code>cat > memo.txt</code> (type text, press Ctrl+D to save to
+                            memo.txt)</div>
+                    </li>
+                    <li><strong>more file</strong>: Output the contents of file<br>
+                        <div class="example">Example: <code>more log.txt</code> (displays log.txt one screen at a time)
+                        </div>
+                    </li>
+                    <li><strong>head file</strong>: Output the first 10 lines of file<br>
+                        <div class="example">Example: <code>head access.log</code> (shows first 10 lines of access.log)
+                        </div>
+                    </li>
+                    <li><strong>tail -f file</strong>: Output the last 10 lines of file, starting with the last 10 lines
+                        as it grows<br>
+                        <div class="example">Example: <code>tail -f server.log</code> (shows last 10 lines of server.log
+                            and updates live)</div>
+                    </li>
+                    <li><strong>ln -s file link</strong>: Create symbolic link to file<br>
+                        <div class="example">Example: <code>ln -s /var/www/html web</code> (creates a symlink named web
+                            to /var/www/html)</div>
+                    </li>
+                    <li><strong>find / -name file</strong>: Search for file from root<br>
+                        <div class="example">Example: <code>find / -name config.yml</code> (searches for config.yml
+                            across the filesystem)</div>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -37,18 +92,48 @@
             <h2 onclick="toggleSection('system-info')">System Info</h2>
             <div id="system-info" class="command-list">
                 <ul>
-                    <li><strong>date</strong>: Show the current date and time<br><div class="example">Example: <code>date</code> (outputs Sat Sep 6 08:41:00 IST 2025)</div></li>
-                    <li><strong>cal</strong>: Show this month's calendar<br><div class="example">Example: <code>cal</code> (displays September 2025 calendar)</div></li>
-                    <li><strong>uptime</strong>: Show current uptime<br><div class="example">Example: <code>uptime</code> (shows system running time, e.g., up 5 days, 2:15)</div></li>
-                    <li><strong>whoami</strong>: Display who you are logged in as<br><div class="example">Example: <code>whoami</code> (outputs current username, e.g., user)</div></li>
-                    <li><strong>finger user</strong>: Display information about user<br><div class="example">Example: <code>finger john</code> (shows details about user john, if installed)</div></li>
-                    <li><strong>uname -a</strong>: Show kernel information<br><div class="example">Example: <code>uname -a</code> (outputs Linux hostname 5.15.0-73-generic)</div></li>
-                    <li><strong>cat /proc/cpuinfo</strong>: CPU information<br><div class="example">Example: <code>cat /proc/cpuinfo</code> (displays CPU details like model name)</div></li>
-                    <li><strong>man command</strong>: Show the manual for command<br><div class="example">Example: <code>man ls</code> (displays the manual page for ls)</div></li>
-                    <li><strong>df</strong>: Show disk usage space<br><div class="example">Example: <code>df -h</code> (shows disk usage in human-readable format)</div></li>
-                    <li><strong>du</strong>: Show directory and swap usage<br><div class="example">Example: <code>du -sh /home/user</code> (shows total size of /home/user)</div></li>
-                    <li><strong>free -m</strong>: Display memory usage in MB<br><div class="example">Example: <code>free -m</code> (shows memory usage in megabytes)</div></li>
-                    <li><strong>top</strong>: Display all currently active processes<br><div class="example">Example: <code>top</code> (displays real-time process list)</div></li>
+                    <li><strong>date</strong>: Show the current date and time<br>
+                        <div class="example">Example: <code>date</code> (outputs Sat Sep 6 08:41:00 IST 2025)</div>
+                    </li>
+                    <li><strong>cal</strong>: Show this month's calendar<br>
+                        <div class="example">Example: <code>cal</code> (displays September 2025 calendar)</div>
+                    </li>
+                    <li><strong>uptime</strong>: Show current uptime<br>
+                        <div class="example">Example: <code>uptime</code> (shows system running time, e.g., up 5 days,
+                            2:15)</div>
+                    </li>
+                    <li><strong>whoami</strong>: Display who you are logged in as<br>
+                        <div class="example">Example: <code>whoami</code> (outputs current username, e.g., user)</div>
+                    </li>
+                    <li><strong>finger user</strong>: Display information about user<br>
+                        <div class="example">Example: <code>finger john</code> (shows details about user john, if
+                            installed)</div>
+                    </li>
+                    <li><strong>uname -a</strong>: Show kernel information<br>
+                        <div class="example">Example: <code>uname -a</code> (outputs Linux hostname 5.15.0-73-generic)
+                        </div>
+                    </li>
+                    <li><strong>cat /proc/cpuinfo</strong>: CPU information<br>
+                        <div class="example">Example: <code>cat /proc/cpuinfo</code> (displays CPU details like model
+                            name)</div>
+                    </li>
+                    <li><strong>man command</strong>: Show the manual for command<br>
+                        <div class="example">Example: <code>man ls</code> (displays the manual page for ls)</div>
+                    </li>
+                    <li><strong>df</strong>: Show disk usage space<br>
+                        <div class="example">Example: <code>df -h</code> (shows disk usage in human-readable format)
+                        </div>
+                    </li>
+                    <li><strong>du</strong>: Show directory and swap usage<br>
+                        <div class="example">Example: <code>du -sh /home/user</code> (shows total size of /home/user)
+                        </div>
+                    </li>
+                    <li><strong>free -m</strong>: Display memory usage in MB<br>
+                        <div class="example">Example: <code>free -m</code> (shows memory usage in megabytes)</div>
+                    </li>
+                    <li><strong>top</strong>: Display all currently active processes<br>
+                        <div class="example">Example: <code>top</code> (displays real-time process list)</div>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -57,14 +142,34 @@
             <h2 onclick="toggleSection('process-management')">Process Management</h2>
             <div id="process-management" class="command-list">
                 <ul>
-                    <li><strong>ps</strong>: Display all currently active processes<br><div class="example">Example: <code>ps aux</code> (lists all running processes with details)</div></li>
-                    <li><strong>top</strong>: Display all running processes<br><div class="example">Example: <code>top</code> (shows interactive process viewer)</div></li>
-                    <li><strong>kill pid</strong>: Kill process with pid<br><div class="example">Example: <code>kill 1234</code> (terminates process with PID 1234)</div></li>
-                    <li><strong>killall proc</strong>: Kill processes named proc<br><div class="example">Example: <code>killall firefox</code> (terminates all firefox processes)</div></li>
-                    <li><strong>bg</strong>: Lists stopped or background jobs; resume a stopped job in the background<br><div class="example">Example: <code>bg %1</code> (resumes job 1 in the background)</div></li>
-                    <li><strong>fg</strong>: Brings the most recent job to the foreground<br><div class="example">Example: <code>fg %1</code> (brings job 1 to the foreground)</div></li>
-                    <li><strong>jobs</strong>: List active jobs<br><div class="example">Example: <code>jobs</code> (lists all background or stopped jobs)</div></li>
-                    <li><strong>nice -n 10 command</strong>: Run command with modified scheduling priority<br><div class="example">Example: <code>nice -n 10 tar -czf archive.tar.gz files</code> (runs tar with lower priority)</div></li>
+                    <li><strong>ps</strong>: Display all currently active processes<br>
+                        <div class="example">Example: <code>ps aux</code> (lists all running processes with details)
+                        </div>
+                    </li>
+                    <li><strong>top</strong>: Display all running processes<br>
+                        <div class="example">Example: <code>top</code> (shows interactive process viewer)</div>
+                    </li>
+                    <li><strong>kill pid</strong>: Kill process with pid<br>
+                        <div class="example">Example: <code>kill 1234</code> (terminates process with PID 1234)</div>
+                    </li>
+                    <li><strong>killall proc</strong>: Kill processes named proc<br>
+                        <div class="example">Example: <code>killall firefox</code> (terminates all firefox processes)
+                        </div>
+                    </li>
+                    <li><strong>bg</strong>: Lists stopped or background jobs; resume a stopped job in the
+                        background<br>
+                        <div class="example">Example: <code>bg %1</code> (resumes job 1 in the background)</div>
+                    </li>
+                    <li><strong>fg</strong>: Brings the most recent job to the foreground<br>
+                        <div class="example">Example: <code>fg %1</code> (brings job 1 to the foreground)</div>
+                    </li>
+                    <li><strong>jobs</strong>: List active jobs<br>
+                        <div class="example">Example: <code>jobs</code> (lists all background or stopped jobs)</div>
+                    </li>
+                    <li><strong>nice -n 10 command</strong>: Run command with modified scheduling priority<br>
+                        <div class="example">Example: <code>nice -n 10 tar -czf archive.tar.gz files</code> (runs tar
+                            with lower priority)</div>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -73,14 +178,35 @@
             <h2 onclick="toggleSection('compression')">Compression</h2>
             <div id="compression" class="command-list">
                 <ul>
-                    <li><strong>tar cf file.tar files</strong>: Create a tar named file.tar containing files<br><div class="example">Example: <code>tar cf backup.tar /home/user/docs</code> (creates backup.tar from docs)</div></li>
-                    <li><strong>tar xf file.tar</strong>: Extract the files from file.tar<br><div class="example">Example: <code>tar xf backup.tar</code> (extracts files from backup.tar)</div></li>
-                    <li><strong>tar czf file.tar.gz files</strong>: Create a tar with Gzip compression<br><div class="example">Example: <code>tar czf backup.tar.gz /home/user/docs</code> (creates compressed backup.tar.gz)</div></li>
-                    <li><strong>tar xzf file.tar.gz</strong>: Extract a tar using Gzip<br><div class="example">Example: <code>tar xzf backup.tar.gz</code> (extracts backup.tar.gz)</div></li>
-                    <li><strong>tar cjf file.tar.bz2 files</strong>: Create a tar with Bzip2 compression<br><div class="example">Example: <code>tar cjf backup.tar.bz2 /home/user/docs</code> (creates compressed backup.tar.bz2)</div></li>
-                    <li><strong>tar xjf file.tar.bz2</strong>: Extract a tar using Bzip2<br><div class="example">Example: <code>tar xjf backup.tar.bz2</code> (extracts backup.tar.bz2)</div></li>
-                    <li><strong>gzip file</strong>: Compresses file and renames it to file.gz<br><div class="example">Example: <code>gzip log.txt</code> (compresses log.txt to log.txt.gz)</div></li>
-                    <li><strong>gunzip file.gz</strong>: Decompresses file.gz back to file<br><div class="example">Example: <code>gunzip log.txt.gz</code> (decompresses to log.txt)</div></li>
+                    <li><strong>tar cf file.tar files</strong>: Create a tar named file.tar containing files<br>
+                        <div class="example">Example: <code>tar cf backup.tar /home/user/docs</code> (creates backup.tar
+                            from docs)</div>
+                    </li>
+                    <li><strong>tar xf file.tar</strong>: Extract the files from file.tar<br>
+                        <div class="example">Example: <code>tar xf backup.tar</code> (extracts files from backup.tar)
+                        </div>
+                    </li>
+                    <li><strong>tar czf file.tar.gz files</strong>: Create a tar with Gzip compression<br>
+                        <div class="example">Example: <code>tar czf backup.tar.gz /home/user/docs</code> (creates
+                            compressed backup.tar.gz)</div>
+                    </li>
+                    <li><strong>tar xzf file.tar.gz</strong>: Extract a tar using Gzip<br>
+                        <div class="example">Example: <code>tar xzf backup.tar.gz</code> (extracts backup.tar.gz)</div>
+                    </li>
+                    <li><strong>tar cjf file.tar.bz2 files</strong>: Create a tar with Bzip2 compression<br>
+                        <div class="example">Example: <code>tar cjf backup.tar.bz2 /home/user/docs</code> (creates
+                            compressed backup.tar.bz2)</div>
+                    </li>
+                    <li><strong>tar xjf file.tar.bz2</strong>: Extract a tar using Bzip2<br>
+                        <div class="example">Example: <code>tar xjf backup.tar.bz2</code> (extracts backup.tar.bz2)
+                        </div>
+                    </li>
+                    <li><strong>gzip file</strong>: Compresses file and renames it to file.gz<br>
+                        <div class="example">Example: <code>gzip log.txt</code> (compresses log.txt to log.txt.gz)</div>
+                    </li>
+                    <li><strong>gunzip file.gz</strong>: Decompresses file.gz back to file<br>
+                        <div class="example">Example: <code>gunzip log.txt.gz</code> (decompresses to log.txt)</div>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -89,12 +215,32 @@
             <h2 onclick="toggleSection('network')">Network</h2>
             <div id="network" class="command-list">
                 <ul>
-                    <li><strong>ping host</strong>: Ping host and output results<br><div class="example">Example: <code>ping google.com</code> (pings google.com to check connectivity)</div></li>
-                    <li><strong>whois domain</strong>: Get whois information for domain<br><div class="example">Example: <code>whois example.com</code> (shows whois data for example.com)</div></li>
-                    <li><strong>dig domain</strong>: Get DNS information for domain<br><div class="example">Example: <code>dig example.com</code> (displays DNS records for example.com)</div></li>
-                    <li><strong>dig -x host</strong>: Reverse lookup host<br><div class="example">Example: <code>dig -x 8.8.8.8</code> (performs reverse DNS lookup for IP 8.8.8.8)</div></li>
-                    <li><strong>wget file</strong>: Download file<br><div class="example">Example: <code>wget https://example.com/file.pdf</code> (downloads file.pdf)</div></li>
-                    <li><strong>wget -c file</strong>: Continue a stopped download<br><div class="example">Example: <code>wget -c https://example.com/file.pdf</code> (resumes downloading file.pdf)</div></li>
+                    <li><strong>ping host</strong>: Ping host and output results<br>
+                        <div class="example">Example: <code>ping google.com</code> (pings google.com to check
+                            connectivity)</div>
+                    </li>
+                    <li><strong>whois domain</strong>: Get whois information for domain<br>
+                        <div class="example">Example: <code>whois example.com</code> (shows whois data for example.com)
+                        </div>
+                    </li>
+                    <li><strong>dig domain</strong>: Get DNS information for domain<br>
+                        <div class="example">Example: <code>dig example.com</code> (displays DNS records for
+                            example.com)</div>
+                    </li>
+                    <li><strong>dig -x host</strong>: Reverse lookup host<br>
+                        <div class="example">Example: <code>dig -x 8.8.8.8</code> (performs reverse DNS lookup for IP
+                            8.8.8.8)</div>
+                    </li>
+                    <li><strong>wget file</strong>: Download file<br>
+                        <div class="example">Example:
+                            <code>wget https://dineshc227.github.io/Dinesh/Dinesh_Bk_SRE3%20(1).pdf</code> (downloads
+                            file.pdf)</div>
+                    </li>
+                    <li><strong>wget -c file</strong>: Continue a stopped download<br>
+                        <div class="example">Example:
+                            <code>wget -c https://dineshc227.github.io/Dinesh/Dinesh_Bk_SRE3%20(1).pdf</code> (resumes
+                            downloading file.pdf)</div>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -103,9 +249,18 @@
             <h2 onclick="toggleSection('file-permissions')">File Permissions</h2>
             <div id="file-permissions" class="command-list">
                 <ul>
-                    <li><strong>chmod octal file</strong>: Change the permissions of file to octal<br><div class="example">Example: <code>chmod 644 file.txt</code> (sets read/write for owner, read for others)</div></li>
-                    <li><strong>chown user file</strong>: Change the owner of file to user<br><div class="example">Example: <code>chown john file.txt</code> (changes owner of file.txt to john)</div></li>
-                    <li><strong>chgrp group file</strong>: Change the group of file to group<br><div class="example">Example: <code>chgrp developers file.txt</code> (changes group of file.txt to developers)</div></li>
+                    <li><strong>chmod octal file</strong>: Change the permissions of file to octal<br>
+                        <div class="example">Example: <code>chmod 644 file.txt</code> (sets read/write for owner, read
+                            for others)</div>
+                    </li>
+                    <li><strong>chown user file</strong>: Change the owner of file to user<br>
+                        <div class="example">Example: <code>chown diensh file.txt</code> (changes owner of file.txt to
+                            dinesh)</div>
+                    </li>
+                    <li><strong>chgrp group file</strong>: Change the group of file to group<br>
+                        <div class="example">Example: <code>chgrp developers file.txt</code> (changes group of file.txt
+                            to developers)</div>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -114,9 +269,19 @@
             <h2 onclick="toggleSection('ssh')">SSH</h2>
             <div id="ssh" class="command-list">
                 <ul>
-                    <li><strong>ssh user@host</strong>: Connect to host as user<br><div class="example">Example: <code>ssh john@192.168.1.100</code> (connects to 192.168.1.100 as john)</div></li>
-                    <li><strong>ssh -p port user@host</strong>: Connect to host on port as user<br><div class="example">Example: <code>ssh -p 2222 john@server.com</code> (connects to server.com on port 2222)</div></li>
-                    <li><strong>ssh-copy-id user@host</strong>: Add your key to host for user to enable a keyed or passwordless login<br><div class="example">Example: <code>ssh-copy-id john@server.com</code> (copies SSH key to server.com for john)</div></li>
+                    <li><strong>ssh user@host</strong>: Connect to host as user<br>
+                        <div class="example">Example: <code>ssh dinesh@192.168.1.100</code> (connects to 192.168.1.100
+                            as dinesh)</div>
+                    </li>
+                    <li><strong>ssh -p port user@host</strong>: Connect to host on port as user<br>
+                        <div class="example">Example: <code>ssh -p 2222 dinesh@server.com</code> (connects to server.com
+                            on port 2222)</div>
+                    </li>
+                    <li><strong>ssh-copy-id user@host</strong>: Add your key to host for user to enable a keyed or
+                        passwordless login<br>
+                        <div class="example">Example: <code>ssh-copy-id dinesh@server.com</code> (copies SSH key to
+                            server.com for dinesh)</div>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -125,10 +290,23 @@
             <h2 onclick="toggleSection('searching')">Searching</h2>
             <div id="searching" class="command-list">
                 <ul>
-                    <li><strong>grep pattern files</strong>: Search for pattern in files<br><div class="example">Example: <code>grep "error" log.txt</code> (searches for "error" in log.txt)</div></li>
-                    <li><strong>grep -r pattern dir</strong>: Search recursively for pattern in dir<br><div class="example">Example: <code>grep -r "config" /etc</code> (searches for "config" in /etc directory)</div></li>
-                    <li><strong>command | grep pattern</strong>: Find all instances of pattern in the output of command<br><div class="example">Example: <code>ls | grep txt</code> (lists files containing "txt" in their names)</div></li>
-                    <li><strong>locate file</strong>: Find all instances of file<br><div class="example">Example: <code>locate config.yml</code> (finds all instances of config.yml)</div></li>
+                    <li><strong>grep pattern files</strong>: Search for pattern in files<br>
+                        <div class="example">Example: <code>grep "error" log.txt</code> (searches for "error" in
+                            log.txt)</div>
+                    </li>
+                    <li><strong>grep -r pattern dir</strong>: Search recursively for pattern in dir<br>
+                        <div class="example">Example: <code>grep -r "config" /etc</code> (searches for "config" in /etc
+                            directory)</div>
+                    </li>
+                    <li><strong>command | grep pattern</strong>: Find all instances of pattern in the output of
+                        command<br>
+                        <div class="example">Example: <code>ls | grep txt</code> (lists files containing "txt" in their
+                            names)</div>
+                    </li>
+                    <li><strong>locate file</strong>: Find all instances of file<br>
+                        <div class="example">Example: <code>locate config.yml</code> (finds all instances of config.yml)
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -137,16 +315,44 @@
             <h2 onclick="toggleSection('installation')">Installation</h2>
             <div id="installation" class="command-list">
                 <ul>
-                    <li><strong>apt update</strong>: Update package lists (Ubuntu)<br><div class="example">Example: <code>sudo apt update</code> (refreshes package lists on Ubuntu)</div></li>
-                    <li><strong>apt upgrade</strong>: Upgrade installed packages (Ubuntu)<br><div class="example">Example: <code>sudo apt upgrade</code> (upgrades all installed packages)</div></li>
-                    <li><strong>apt install package</strong>: Install a package (Ubuntu)<br><div class="example">Example: <code>sudo apt install vim</code> (installs vim editor)</div></li>
-                    <li><strong>apt remove package</strong>: Remove a package (Ubuntu)<br><div class="example">Example: <code>sudo apt remove vim</code> (removes vim package)</div></li>
-                    <li><strong>dpkg -l</strong>: List installed packages (Ubuntu)<br><div class="example">Example: <code>dpkg -l | grep vim</code> (lists installed packages matching vim)</div></li>
-                    <li><strong>yum update</strong>: Update packages (RHEL, older versions)<br><div class="example">Example: <code>sudo yum update</code> (updates all packages on older RHEL systems)</div></li>
-                    <li><strong>dnf update</strong>: Update packages (RHEL, newer versions)<br><div class="example">Example: <code>sudo dnf update</code> (updates packages on newer RHEL systems)</div></li>
-                    <li><strong>dnf install package</strong>: Install a package (RHEL)<br><div class="example">Example: <code>sudo dnf install httpd</code> (installs Apache web server)</div></li>
-                    <li><strong>dnf remove package</strong>: Remove a package (RHEL)<br><div class="example">Example: <code>sudo dnf remove httpd</code> (removes Apache web server)</div></li>
-                    <li><strong>rpm -qa</strong>: List installed RPM packages (RHEL)<br><div class="example">Example: <code>rpm -qa | grep httpd</code> (lists installed RPMs matching httpd)</div></li>
+                    <li><strong>apt update</strong>: Update package lists (Ubuntu)<br>
+                        <div class="example">Example: <code>sudo apt update</code> (refreshes package lists on Ubuntu)
+                        </div>
+                    </li>
+                    <li><strong>apt upgrade</strong>: Upgrade installed packages (Ubuntu)<br>
+                        <div class="example">Example: <code>sudo apt upgrade</code> (upgrades all installed packages)
+                        </div>
+                    </li>
+                    <li><strong>apt install package</strong>: Install a package (Ubuntu)<br>
+                        <div class="example">Example: <code>sudo apt install vim</code> (installs vim editor)</div>
+                    </li>
+                    <li><strong>apt remove package</strong>: Remove a package (Ubuntu)<br>
+                        <div class="example">Example: <code>sudo apt remove vim</code> (removes vim package)</div>
+                    </li>
+                    <li><strong>dpkg -l</strong>: List installed packages (Ubuntu)<br>
+                        <div class="example">Example: <code>dpkg -l | grep vim</code> (lists installed packages matching
+                            vim)</div>
+                    </li>
+                    <li><strong>yum update</strong>: Update packages (RHEL, older versions)<br>
+                        <div class="example">Example: <code>sudo yum update</code> (updates all packages on older RHEL
+                            systems)</div>
+                    </li>
+                    <li><strong>dnf update</strong>: Update packages (RHEL, newer versions)<br>
+                        <div class="example">Example: <code>sudo dnf update</code> (updates packages on newer RHEL
+                            systems)</div>
+                    </li>
+                    <li><strong>dnf install package</strong>: Install a package (RHEL)<br>
+                        <div class="example">Example: <code>sudo dnf install httpd</code> (installs Apache web server)
+                        </div>
+                    </li>
+                    <li><strong>dnf remove package</strong>: Remove a package (RHEL)<br>
+                        <div class="example">Example: <code>sudo dnf remove httpd</code> (removes Apache web server)
+                        </div>
+                    </li>
+                    <li><strong>rpm -qa</strong>: List installed RPM packages (RHEL)<br>
+                        <div class="example">Example: <code>rpm -qa | grep httpd</code> (lists installed RPMs matching
+                            httpd)</div>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -155,19 +361,44 @@
             <h2 onclick="toggleSection('shortcuts')">Shortcuts</h2>
             <div id="shortcuts" class="command-list">
                 <ul>
-                    <li><strong>Ctrl+C</strong>: Halts the current command<br><div class="example">Example: Press <code>Ctrl+C</code> while running <code>ping google.com</code> (stops the ping)</div></li>
-                    <li><strong>Ctrl+Z</strong>: Stops the current command, resume with fg or bg<br><div class="example">Example: Press <code>Ctrl+Z</code> while running <code>sleep 100</code> (pauses sleep)</div></li>
-                    <li><strong>Ctrl+D</strong>: Log out of current session, similar to exit<br><div class="example">Example: Press <code>Ctrl+D</code> in terminal (logs out of session)</div></li>
-                    <li><strong>Ctrl+W</strong>: Erases one word in the current line<br><div class="example">Example: Type <code>ls dir1 dir2</code>, press <code>Ctrl+W</code> (deletes dir2)</div></li>
-                    <li><strong>Ctrl+U</strong>: Erases the whole line<br><div class="example">Example: Type <code>ls -la</code>, press <code>Ctrl+U</code> (clears the entire line)</div></li>
-                    <li><strong>Ctrl+R</strong>: Type to bring up a recent command<br><div class="example">Example: Press <code>Ctrl+R</code>, type <code>ls</code> (recalls last ls command)</div></li>
-                    <li><strong>!!</strong>: Repeats the last command<br><div class="example">Example: <code>!!</code> after <code>ls -la</code> (reruns ls -la)</div></li>
-                    <li><strong>exit</strong>: Log out of current session<br><div class="example">Example: <code>exit</code> (closes the terminal session)</div></li>
-                    <li><strong>.</strong>: Use with extreme caution<br><div class="example">Example: <code>./script.sh</code> (runs script.sh in current directory)</div></li>
+                    <li><strong>Ctrl+C</strong>: Halts the current command<br>
+                        <div class="example">Example: Press <code>Ctrl+C</code> while running
+                            <code>ping google.com</code> (stops the ping)</div>
+                    </li>
+                    <li><strong>Ctrl+Z</strong>: Stops the current command, resume with fg or bg<br>
+                        <div class="example">Example: Press <code>Ctrl+Z</code> while running <code>sleep 100</code>
+                            (pauses sleep)</div>
+                    </li>
+                    <li><strong>Ctrl+D</strong>: Log out of current session, similar to exit<br>
+                        <div class="example">Example: Press <code>Ctrl+D</code> in terminal (logs out of session)</div>
+                    </li>
+                    <li><strong>Ctrl+W</strong>: Erases one word in the current line<br>
+                        <div class="example">Example: Type <code>ls dir1 dir2</code>, press <code>Ctrl+W</code> (deletes
+                            dir2)</div>
+                    </li>
+                    <li><strong>Ctrl+U</strong>: Erases the whole line<br>
+                        <div class="example">Example: Type <code>ls -la</code>, press <code>Ctrl+U</code> (clears the
+                            entire line)</div>
+                    </li>
+                    <li><strong>Ctrl+R</strong>: Type to bring up a recent command<br>
+                        <div class="example">Example: Press <code>Ctrl+R</code>, type <code>ls</code> (recalls last ls
+                            command)</div>
+                    </li>
+                    <li><strong>!!</strong>: Repeats the last command<br>
+                        <div class="example">Example: <code>!!</code> after <code>ls -la</code> (reruns ls -la)</div>
+                    </li>
+                    <li><strong>exit</strong>: Log out of current session<br>
+                        <div class="example">Example: <code>exit</code> (closes the terminal session)</div>
+                    </li>
+                    <li><strong>.</strong>: Use with extreme caution<br>
+                        <div class="example">Example: <code>./script.sh</code> (runs script.sh in current directory)
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>
