@@ -1,26 +1,41 @@
 
+.profile {
+  text-align: center; /* Center content for better mobile alignment */
+  margin: 20px 0; /* Add vertical spacing */
+}
+
+.profile h3 {
+  color: #ff5f6d;
+  font-size: 1.2rem;
+  margin: 0 0 8px 0;
+  padding: 0 10%; /* Reduced and relative padding for responsiveness */
+  font-weight: 600;
+  letter-spacing: 0.7px;
+  animation: profileH3FadeInMove 1.2s cubic-bezier(0.4, 0, 0.2, 1) both, profileH3InfiniteMove 6s linear infinite;
+  text-shadow: 0 0 8px #ff5f6d55, 0 2px 8px #0002;
+}
+
 .profile a {
   color: #ff5f6d;
   font-weight: 700;
   font-size: 1.08rem;
   text-decoration: none;
   background: rgb(253, 252, 252);
-  padding: 6px 325px;
+  padding: 6px 15%; /* Relative padding for better scaling */
   border-radius: 18px;
   box-shadow: 0 2px 8px #0002;
   transition: background 0.2s, color 0.2s;
-}
-.profile h3 {
-  color: #ff5f6d;
-  font-size: 1.2rem;
-  margin: 0 0 8px 0;
-  padding: 0px 325px;
-  font-weight: 600;
-  letter-spacing: 0.7px;
-  animation: profileH3FadeInMove 1.2s cubic-bezier(0.4,0,0.2,1) both, profileH3InfiniteMove 6s linear infinite;
-  text-shadow: 0 0 8px #ff5f6d55, 0 2px 8px #0002;
+  display: inline-block; /* Ensure proper block behavior */
+  width: auto; /* Prevent stretching */
+  max-width: 80%; /* Limit width on smaller screens */
 }
 
+.profile a:hover {
+  background: #ff5f6d;
+  color: #fff;
+}
+
+/* Animation for h3 */
 @keyframes profileH3FadeInMove {
   0% {
     opacity: 0;
@@ -47,10 +62,31 @@
   }
 }
 
+/* Media Queries for Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+  .profile h3 {
+    font-size: 1rem; /* Smaller font size for tablets */
+    padding: 0 5%; /* Further reduce padding */
+  }
 
-.profile a:hover {
-  background: #ff5f6d;
-  color: #fff;
+  .profile a {
+    font-size: 0.95rem; /* Slightly smaller text */
+    padding: 6px 10%; /* Adjust padding for smaller screens */
+    max-width: 90%; /* Allow more width for smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .profile h3 {
+    font-size: 0.9rem; /* Even smaller for mobile */
+    padding: 0 2%; /* Minimal padding */
+  }
+
+  .profile a {
+    font-size: 0.85rem; /* Smaller text for mobile */
+    padding: 6px 8%; /* Further reduced padding */
+    max-width: 95%; /* Maximize usable width */
+  }
 }
 body {
     font-family: 'Quicksand', Arial, sans-serif;
